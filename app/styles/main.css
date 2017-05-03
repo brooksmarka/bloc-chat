@@ -1,10 +1,9 @@
 body {
-  color: #fff;
-  font-family: sans-serif;
+  color: ;
+  font-family: Avenir;
   font-size: 1.25rem;
   line-height: 150%;
   text-align: center;
-  text-shadow: 0 2px 2px #b6701e;
 }
 
 div {
@@ -25,7 +24,7 @@ h1 {
 
 .left-column {
   background-color: lightslategrey;
-  flex: 1;
+  flex: .5;
   padding: 1rem;
 }
 

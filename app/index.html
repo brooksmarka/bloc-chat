@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="blocChat">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bloc Chat Project</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <section class="container">
+        <div class="left-column">
+            <h1>rooms</h1>
+            <ui-view></ui-view>
+        </div>
+        <div class="right-column">
+            <h1>chats</h1> 
+        </div>
+    </section>
+    <!-- Angular -->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+     <!-- AngularUI Router -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <!-- FireBase -->
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+     <!-- Firebase -->   
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyDvwoRjhaYUF1LV9YWypu8gOW7YUj62qng",
+    authDomain: "bloc-chat-fded8.firebaseapp.com",
+    databaseURL: "https://bloc-chat-fded8.firebaseio.com",
+    projectId: "bloc-chat-fded8",
+    storageBucket: "bloc-chat-fded8.appspot.com",
+    messagingSenderId: "171517757175"
+    };
+    firebase.initializeApp(config);
+    </script>
+    
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/controllers/MainCtrl.js"></script>
+    <script src="/scripts/services/Room.js"></script>
+    
+</body>
+</html>
