@@ -6,28 +6,40 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <section class="container">
-        <div class="left-column">
-            <h1>rooms</h1>
-            <ui-view></ui-view>
-        </div>
-        <div class="right-column">
-            <h1>chats</h1> 
-        </div>
-    </section>
-    <!-- Angular -->
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <section ng-controller="ModalCtrl as modal" class="container">
+    <div class="left-column">
+      <div class="left-column-header">
+        <h1>Bloc Chat</h1>
+        <button class="button" ng-click="modal.open()"> new room </button>
+      </div>
+      <div class="template">
+        <ui-view></ui-view>
+      </div>
+    </div>
+      <div class="right-column">
+      </div>
+  </section>
 
-     <!-- AngularUI Router -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--Angular Animate -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <!--Angular Sanitize -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+
+    <!-- AngularUI Router -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <!-- AngularUI Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
 
     <!-- FireBase -->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
-     <!-- Firebase -->   
+     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-    
+
     <script>
     // Initialize Firebase
     var config = {
@@ -40,10 +52,11 @@
     };
     firebase.initializeApp(config);
     </script>
-    
+
     <script src="/scripts/app.js"></script>
     <script src="/scripts/controllers/MainCtrl.js"></script>
+    <script src="/scripts/controllers/ModalCtrl.js"></script>
     <script src="/scripts/services/Room.js"></script>
-    
+
 </body>
 </html>

@@ -5,7 +5,7 @@
                  enabled: true,
                  requireBase: false
               });
- 
+
          $stateProvider
              .state('main', {
                  url: '/',
@@ -13,8 +13,8 @@
                  templateUrl: '/templates/main.html'
              });
      }
-     
+
      angular
-         .module('blocChat', ['ui.router', 'firebase'])
+         .module('blocChat', ['ui.router','ui.bootstrap','firebase'])
          .config(config);
  })();
