@@ -8,11 +8,12 @@
 
       Room.add = function(room){
         $add();
-        }
+      }
         return Room;
-    }
+    };
+    
+    angular
+      .module('blocChat')
+      .factory('Room', ['$firebaseArray', Room]);
 
-angular
-    .module('blocChat')
-    .factory('Room', ['$firebaseArray', Room]);
 })();
