@@ -1,13 +1,13 @@
 body {
   font-family: Avenir;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   line-height: 150%;
   text-align: left;
 
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   margin: .75rem 0 0.75rem 0;
 }
 
@@ -19,7 +19,7 @@ button {
   border: 0;
   border-radius: 5px;
   font-family: Avenir;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   background-color: lightgrey;
   margin-left: 3rem;
   margin-top: .7rem;
@@ -27,7 +27,12 @@ button {
 
 /* Pattern styles */
 .container {
+flex: 1;
 display: flex;
+padding-left: 0;
+padding-right: 0;
+width: auto;
+
 }
 
 .left-column-header{
@@ -41,7 +46,15 @@ display: flex;
 }
 
 .right-column {
-  background-color: white;
+  background-color: lightgrey;
   flex: 1;
   padding: 1rem;
+}
+
+.btn-primary {
+  background-color: grey;
+}
+
+.btn-warning {
+  background-color: grey;
 }
