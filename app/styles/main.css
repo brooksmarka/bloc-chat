@@ -53,8 +53,10 @@ width: auto;
 
 .btn-primary {
   background-color: grey;
+  border-color: grey;
 }
 
 .btn-warning {
   background-color: grey;
+  border-color: grey;
 }

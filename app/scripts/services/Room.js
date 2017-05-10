@@ -6,12 +6,12 @@
 
       Room.all = rooms;
 
-      Room.add = function(room){
-        $add();
+      Room.add = function(roomName){
+        rooms.$add({$value:roomName});
       }
         return Room;
     };
-    
+
     angular
       .module('blocChat')
       .factory('Room', ['$firebaseArray', Room]);

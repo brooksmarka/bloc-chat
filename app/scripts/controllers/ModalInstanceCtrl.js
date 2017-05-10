@@ -1,9 +1,8 @@
 (function() {
   function ModalInstanceCtrl ($uibModalInstance, Room) {
-    var room = {};
-    this.submit = function(room) {
-      room = room;
-      Room.add();
+    this.room = '';
+    this.submit = function() {
+      Room.add(this.room);
       $uibModalInstance.dismiss('cancel');
     };
 
