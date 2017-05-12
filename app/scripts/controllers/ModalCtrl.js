@@ -1,6 +1,6 @@
 (function() {
-    function ModalCtrl($uibModal) {
-      this.open = function(){
+    function ModalCtrl($scope,$uibModal) {
+      $scope.openModal = function(){
         var modalInstance = $uibModal.open({
           templateUrl: '/templates/modal.html',
           controller: 'ModalInstanceCtrl',
@@ -11,6 +11,6 @@
     };
     angular
         .module('blocChat')
-        .controller('ModalCtrl', ['$uibModal', ModalCtrl]);
+        .controller('ModalCtrl', ['$scope','$uibModal', ModalCtrl]);
 
 })();
