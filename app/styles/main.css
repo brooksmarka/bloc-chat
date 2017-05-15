@@ -21,23 +21,33 @@ button {
   font-family: Avenir;
   font-size: 1.5rem;
   background-color: lightgrey;
-  margin-left: 3rem;
-  margin-top: .7rem;
+  margin-left: 6rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
 }
 
 /* Pattern styles */
 .container {
 flex: 1;
 display: flex;
+padding-top: 1rem;
+padding-bottom: 1rem;
 padding-left: 0;
 padding-right: 0;
 width: auto;
 
 }
 
+.room {
+  padding-top: 1rem;
+}
+
 .left-column-header{
   display: flex;
   flex-direction: row;
+  border-bottom: 3px solid black;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 .left-column {
   background-color: grey;
@@ -51,12 +61,15 @@ width: auto;
   padding: 1rem;
 }
 
-.btn-primary {
-  background-color: grey;
-  border-color: grey;
+.room-title {
+  flex-direction: row;
+  border-bottom: 3px solid black;
+  padding-bottom: .9rem;
+  margin-bottom: 1rem;
 }
 
-.btn-warning {
+.btn-primary,.btn-warning {
   background-color: grey;
   border-color: grey;
+  margin-left: 1rem;
 }

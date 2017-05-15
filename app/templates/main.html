@@ -4,14 +4,21 @@
       <h1>Bloc Chat</h1>
       <button class="button" ng-click="openModal()"> new room </button>
     </div>
-    <div ng-repeat="room in rooms" ng-click="openRoom(room)">
+    <div class = "room" ng-repeat="room in rooms" ng-click="openRoom(room)">
         {{room.$value}}
         <!--{{room}}-->
         <!--<pre><code>{{room}}</code></pre> -->
     </div>
   </div>
     <div class="right-column">
+      <section class="room-title">
       <h1>{{currentRoomTitle}}</h1>
-      {{currentRoomMessages}}
+     </section>
+      <div ng-repeat="message in currentRoomMessages">
+        <b>{{message.username}}</b>:
+        <br>
+          {{message.content}}
+        </br>
+      </div>
     </div>
 </section>
