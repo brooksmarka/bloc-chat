@@ -6,19 +6,20 @@
     </div>
     <div class = "room" ng-repeat="room in rooms" ng-click="openRoom(room)">
         {{room.$value}}
-        <!--{{room}}-->
-        <!--<pre><code>{{room}}</code></pre> -->
     </div>
   </div>
     <div class="right-column">
       <section class="room-title">
-      <h1>{{currentRoomTitle}}</h1>
+      <h1 ng-hide="currentRoomTitle"> Chat Rooms </h1>
+      <h1 ng-show="currentRoomTitle">{{currentRoomTitle}}</h1>
      </section>
       <div ng-repeat="message in currentRoomMessages">
-        <b>{{message.username}}</b>:
-        <br>
-          {{message.content}}
-        </br>
+        <div ng-class-odd="'odd'" ng-class-even="'even'">
+          <b>{{message.username}}</b>:
+          <br>
+            {{message.content}}
+          </br>
+        </div>
       </div>
     </div>
 </section>

@@ -61,11 +61,22 @@ width: auto;
   padding: 1rem;
 }
 
+.odd {
+  background-color: lightgrey;
+}
+
+.even {
+  background-color: darkgrey;
+}
 .room-title {
   flex-direction: row;
   border-bottom: 3px solid black;
   padding-bottom: .9rem;
   margin-bottom: 1rem;
+}
+
+.room-title h1:empty {
+  padding: 1.35rem;
 }
 
 .btn-primary,.btn-warning {

@@ -10,11 +10,11 @@
              .state('main', {
                url: '/',
                controller: 'MainCtrl as main',
-               templateUrl: '/templates/main.html'             
+               templateUrl: '/templates/main.html'
              });
      }
 
      angular
-         .module('blocChat', ['ui.router','ui.bootstrap','firebase'])
+         .module('blocChat', ['ui.router','ui.bootstrap','firebase','ngCookies'])
          .config(config);
  })();

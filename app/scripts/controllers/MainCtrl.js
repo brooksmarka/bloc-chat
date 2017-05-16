@@ -2,7 +2,7 @@
 (function() {
     function MainCtrl($scope, Room, Message) {
       var currentRoom = '';
-      var currentRoomTitle = "Rooms";
+
        $scope.rooms = Room.all;
 
        $scope.openRoom = function(room){
