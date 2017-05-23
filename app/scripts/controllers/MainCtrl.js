@@ -7,6 +7,8 @@
 
        $scope.openRoom = function(room){
 
+         Message.setRoom(room.$id);
+
          // Assign property of room title to display in template
          $scope.currentRoomTitle = room.$value;
 
